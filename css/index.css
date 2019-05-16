@@ -1,0 +1,410 @@
+header .logo {
+    color: #fed136;
+    font-size: 25px;
+    float:left;
+}
+header .nav {
+    float: right;
+}
+header .btn_list {
+    display: none;
+    font-size: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+header .btn_list:hover {
+    background-color: #fed136; 
+}
+header li {
+    margin: 10px 15px;
+    float: left;
+}
+header .navbar {
+    width: 80%;
+}
+.nav a {
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 8px;
+}
+/*.nav a:link {
+    font-size: 16px;
+    color: #fff;
+}*/
+.nav a:hover {
+    background: #fed136;
+    text-decoration: none;
+}
+@media screen  and (max-width: 960px) {
+    header .nav {
+        display: none;
+    }
+    header .btn_list {
+        display: inline-block;
+    }
+}
+.intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.intro h2 {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.intro h3 {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 70px;
+}
+
+.intro a {
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    background: #fed136;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.intro a:hover {
+    background: #f3be0a;
+}
+
+section > h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+section > p {
+    font-size: 16px;
+    font-style: italic;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #777;
+    margin-top: 10px;
+    margin-bottom: 50px; 
+}
+
+section .service li {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+section h3 {
+    font-size: 20px;
+    margin: 15px;
+}
+
+section ul>li  {
+    font-size: 14px;
+    font-family: "Droid Serif";
+    color: #777;
+}
+
+ .service .iconfont {
+    font-size: 40px;
+    border-radius: 50%;
+    padding: 20px;
+    color: #fff;
+    vertical-align: center;
+    background-color: #fed136;
+ }
+
+section .portfolio {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+section .portfolio figure {
+    width: calc(33.33% - 40px);
+    margin: 0 20px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    float: left;
+    background-color: #fff;
+}
+
+section .portfolio a {
+    display: block;
+    position: relative;
+}
+
+section .portfolio img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+ section .portfolio figcaption {
+    font: bold 18px Montserrat;
+    margin-top: 20px;
+ }
+
+ section .portfolio p {
+    font: italic 16px "Droid Serif";
+    color: #777;
+ }
+
+section .portfolio .selection {
+    background: rgba(254, 209, 54, .9); 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+ }
+ 
+ section .portfolio .selection:hover {
+    opacity: 1;
+}
+
+.portfolio .selection .iconfont {
+    font-size: 45px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top:-33px;
+    margin-left: -22px; 
+}
+section .about img {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #F1F1F1;
+
+ }
+ section .about li {
+    margin-bottom: 127px;
+    position: relative;
+}
+section .about .img {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #F1F1F1;
+    background-color: #FED136;
+    color: #fff;
+    font-size: 22px;
+    padding-top: 29px;
+}
+section .about li::after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+section .about li:nth-child(odd) {
+    padding-right: calc(50% - 90px);
+    text-align: right;
+}
+section .about li:nth-child(odd) img {/*奇数行*/
+    float: right;
+}
+section .about li:nth-child(odd) dl {
+    margin-right: 200px;
+}
+section .about li:nth-child(even) {
+    padding-left: calc(50% - 90px);
+    text-align: left;
+}
+section .about li:nth-child(even) img {/*偶数行*/
+    float: left;
+}
+section .about li:nth-child(even) dl {
+    margin-left: 200px;
+}
+section .about li:last-child {/*最后一个结束圆*/
+    padding-left:calc(50% - 90px);
+    text-align: center;
+}
+
+
+section .about li::before {/*竖线显示*/
+    content: "";
+    width: 3px;
+    height: 165px;
+    background-color: #F1F1F1;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+}
+section .about li:last-child::before {
+    height: 0;
+}
+section .about dl>dt,
+section .about dl h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+section .about dl p {
+    line-height: 1.7;
+}
+.team figure img {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+
+.team figure {
+    float: left;
+    width: calc(33.33% - 10px);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.team figcaption {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+.team .team-wrap a {
+    display: inline-block;
+    font-size: 25px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+}
+.team .team-wrap a:hover {
+    color: #fff;
+    background-color: #FED136;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+.team .team-wrap p {
+    font-size: 16px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #777;
+}
+.team .last-text {
+    margin:0 auto;
+    margin-top: 50px;
+    width:750px; 
+}
+.company {
+    padding: 0;
+}
+.company li {
+    float: left;
+    width: 25%;
+    }
+.company ul {
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+section.contact {
+    background: #333 url(../imgs/map-image.png) no-repeat;
+    background-size: cover;
+}   
+section.contact h1 {
+    color: #fff;
+}
+.contact .contact-info {
+    float: left;
+    width: 500px;
+}
+.contact .contact_wrap {
+    width: 1000px;
+}
+.contact .contact-info input {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.contact .message-text {
+    margin-left: 520px;
+}
+.contact .message-text textarea {
+    width: 100%;
+    height: 226px;
+    padding: 20px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+@media screen and (max-width: 800px){
+        .contact .contact-info {
+        float: none;
+        margin: 0 auto;
+    }
+    .contact .message-text {
+        width: 500px;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+}
+.contact .btn_submit {
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    background: #fed136;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin: 20px;
+}
+.contact .btn_submit_wrap{
+    text-align: center;
+}
+footer {
+    padding: 20px 0;
+}
+footer .copyright {
+    line-height: 35px;
+    float: left;
+    display: inline-block;
+    width: 300px;
+}
+footer .backtotop {
+    float: right;
+    line-height: 35px;
+}
+footer .account {
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align:center;
+}
+footer .layout .account>a {
+    color: #fff;
+    display: inline-block;
+    font-size: 25px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #333;
+}
+footer .layout .account>a:hover {
+    color: #fff;
+    background-color: #FED136;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+footer .backtotop {
+    display: inline-block;
+    width: 300px;
+}
+footer .backtotop>a {
+    display: inline-block;
+    margin-left: 20px;
+    color: #FED136;
+}
